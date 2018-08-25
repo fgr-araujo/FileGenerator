@@ -1,0 +1,24 @@
+{
+  "name": "file-generator",
+  "version": "0.0.1",
+  "description": "Generate files with their tests",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./bin/FileGenerator",
+    "test": "NODE_ENV=test jest"
+  },
+  "bin": {
+    "FileGenerator": "./bin/FileGenerator.js"
+  },
+  "preferGlobal": true,
+  "author": "Fagner A.",
+  "license": "MIT",
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "mkdirp": "^0.5.1",
+    "param-case": "^2.1.1"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
