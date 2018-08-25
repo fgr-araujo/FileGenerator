@@ -37,7 +37,7 @@ describe('DefineFile', () => {
         appFolder: '~/dev/app/'
       }
       const { fileContent, filePath } = DefineFile.generateFileTypeTestJs(fileDefinition)
-      expect(filePath).toEqual('~/dev/app/test/unit/lib/MyName.test.js')
+      expect(filePath).toEqual('~/dev/app/test/unit/spec/lib/MyName.test.js')
     })
 
     it('VUE file type', () => {
@@ -47,7 +47,7 @@ describe('DefineFile', () => {
         appFolder: '~/dev/app/'
       }
       const { fileContent, filePath } = DefineFile.generateFileTypeVue(fileDefinition)
-      expect(filePath).toEqual('~/dev/app/lib/MyName.test.js')
+      expect(filePath).toEqual('~/dev/app/lib/MyName.vue')
     })
 
     it('TEST VUE file type', () => {
@@ -57,7 +57,7 @@ describe('DefineFile', () => {
         appFolder: '~/dev/app/'
       }
       const { fileContent, filePath } = DefineFile.generateFileTypeVueTest(fileDefinition)
-      expect(filePath).toEqual('~/dev/app/test/unit/lib/MyName.spec.vue')
+      expect(filePath).toEqual('~/dev/app/test/unit/spec/lib/MyName.spec.js')
     })
 
     it('SCSS file type', () => {
