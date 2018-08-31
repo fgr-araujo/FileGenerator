@@ -1,0 +1,5 @@
+{
+  "sourcePath": "src/",
+  "resolveSourcePath": "@/",
+  "unitTestPath": "test/unit/specs/unity/"
+}

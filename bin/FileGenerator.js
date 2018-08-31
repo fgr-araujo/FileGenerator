@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+const path = require('path')
+const fs = require('fs')
+
+
 
 const routine = async () => {
   const Arguments = require('../lib/ArgumentMap')
@@ -9,7 +13,7 @@ const routine = async () => {
   const { files } = DefineFile.mapFileArgument(informedArguments)
   const createFiles = await CreateFiles({ files })
 
-  console.log('finished')
+  console.log('Success!')
 }
 
 routine()
